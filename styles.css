@@ -1,0 +1,171 @@
+/* Navbar Style with Gradient */
+.navbar {
+    background: linear-gradient(to right, #003366, #211548);  /* Gradient from lighter blue to dark blue */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: white;  /* Set text color to white */
+    font-size: 18px;
+    padding: 15px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #003366; /* Slightly lighter navy blue */
+    color: white; /* Keep text color white */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Navbar brand style */
+.navbar-brand {
+    color: white;  /* Set brand text color to white */
+    font-size: 24px;
+}
+
+/* Adjust navbar items on small screens */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: #211548;  /* Solid color for small screens */
+    }
+}
+
+/* Hero Image Section */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;  /* Full viewport height */
+    background-image: url('path-to-your-image.jpg');  /* Replace with your image path */
+    background-size: cover;  /* Ensures the image covers the container */
+    background-position: center center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents image tiling */
+    border-radius: 10px;  /* Optional: adds rounded corners */
+}
+
+/* Text within hero image */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* General gallery image styling */
+.row-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Apply default size for all images (300x400 for first 9 images) */
+.gallery .col-md-4 img:nth-child(-n+9) {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Last 3 images with 400x300 size */
+.gallery .col-md-4 img:nth-last-child(-n+3) {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Add spacing between the images */
+.gallery .col-md-4 {
+    padding: 10px;  /* Add padding to create space between columns */
+}
+
+/* Optional: Add margins between rows */
+.gallery .row {
+    margin-bottom: 20px;  /* Adds space between rows */
+}
+
+/* General gallery image styling with shadow */
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);  /* Add shadow to all images */
+    border-radius: 8px;  /* Optional: adds rounded corners to the images */
+    transition: all 0.3s ease-in-out;  /* Adds a smooth effect on hover */
+}
+
+/* Hero Image Section */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    overflow: hidden; /* Prevents overflow of the image */
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center center; /* Centers the image inside the container */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7); /* Adds shadow effect */
+  }
+  
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer .social-links i {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}
